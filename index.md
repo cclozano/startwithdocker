@@ -1,5 +1,5 @@
 # Una breve introduccion con docker
-## Cuando desarrollamos generalmente nos vemos obligados a usar multiples herramientas tales como motores de bases de datos, adminitradores de contenido, colas de mensajes, en fin.. un sinnumero de programas que no necesariamente deben ser instalados en nuestra maquina host. Para ello les dejo algunos scripts que pueden ser de utilidad para que puedan instalar docker en linux y sobre el desplegar algunos contenedores
+## Cuando desarrollamos generalmente nos vemos obligados a usar multiples herramientas tales como motores de bases de datos, administradores de contenido, colas de mensajes, en fin.. un sinnumero de programas que no necesariamente deben ser instalados en nuestra maquina host. Para ello les dejo algunos scripts que pueden ser de utilidad para que puedan instalar docker en linux y sobre el desplegar algunos contenedores
 
 ## Para este tutorial usaremos ubuntu como sistema operativo si necesita instalar en otra distribucion puedes revisar la documentacion oficial en el siguiente enlace:
 https://docs.docker.com/engine/install/
@@ -48,6 +48,14 @@ sudo apt-get update
  ```
   sudo reboot
  ```
+### Probemos que docker funciona correctamente con el siguiente comando que nos permite ver los contenedores que tenemos
+```
+docker ps -a
+```
+ 
+### Si no deseas reiniciar el sistema puedes seguir usando docker pero con el comando sudo
+
+ 
 ## Hasta aqui hemos instalado el motor de docker y ya podemos comenzar a desplegar nuestros contenedores, para ello vamos a comenzar desplegado el motor de mongodb
 ### creamos la red para nuestros contenedores
 ```
