@@ -44,10 +44,8 @@ sudo apt-get update
 ```
   sudo usermod -aG docker $USER
  ```
-### en algunos casos es necesario reiniciar el sistema para que los cambios de permisos tengan efecto
- ```
-  sudo reboot
- ```
+### cerramos sesion para que los cambios de permisos tengan efecto
+### Una vez que iniciamos nuevamente la sesion probamos:
 ### Probemos que docker funciona correctamente con el siguiente comando que nos permite ver los contenedores que tenemos
 ```
 docker ps -a
